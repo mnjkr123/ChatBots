@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <title>Load More | DivergeAI</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="assets/images/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/js/bootstrap.min.js">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/super-classes.css"/>
+  <link rel="stylesheet" href="./assets/css/custom-style.css"/>
+  <link rel="stylesheet" href="./assets/css/mobile.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+ 
+</head>
+
+<body>
+
+  <!-- HEADER-SECTION -->
+  <div class="about-us-banner-section">
+    <header class="header">
+      <div class="main-header">
+        <div class="container-fluid">
+
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html"><img src="./assets/images/logo.png" alt=""
+                class="img-fluid  logo"></a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link text-decoration-none navbar-text-color" href="index.html">Home<span
+                      class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-decoration-none navbar-text-color" href="about-us.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-decoration-none navbar-text-color" href="services.html">Services</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#" id="navbarDropdown"
+                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Pages
+                  </a>
+                  <div class="dropdown-menu drop-down-content">
+                    <ul class="list-unstyled drop-down-pages">
+                      <li class="nav-item"> <a class="dropdown-item  nav-link" href="projects.html">Projects</a></li>
+                      <li class="nav-item"> <a class="dropdown-item  nav-link" href="our-team.html">Our Team</a></li>
+                      <li class="nav-item"> <a class="dropdown-item  nav-link m-0" href="faqs-page.html">FAQ's</a></li>
+
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle dropdown-color  navbar-text-color" href="#"
+                    id="navbarDropdown-menu" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Blog
+                  </a>
+                  <div class="dropdown-menu blogs-drop-down" aria-labelledby="navbarDropdown-menu">
+                    <ul class="list-unstyled drop-down-pages">
+                      <li class="nav-item"> <a class="dropdown-item nav-link navbar-text-color"
+                          href="blog.html">Blog</a></li>
+                      <li class="nav-item"> <a class="dropdown-item nav-link" href="single-post.html">Single Post</a>
+                      </li>
+                      <li class="nav-item"> <a class="dropdown-item nav-link" href="infinite-scroll.html">Infinite
+                          Scroll</a></li>
+                      <li class="nav-item active"> <a class="dropdown-item nav-link" href="load-more.html">Load More</a>
+                      </li>
+                      <li class="nav-item"> <a class="dropdown-item nav-link" href="one-column.html">One Column</a></li>
+                      <li class="nav-item"> <a class="dropdown-item nav-link" href="two-column.html">Two Column</a></li>
+                      <li class="nav-item"><a class="dropdown-item nav-link" href="three-column.html">Three Column</a>
+                      </li>
+                      <li class="nav-item"> <a class="dropdown-item nav-link" href="four-column.html">Four Column</a>
+                      </li>
+                      <li class="nav-item"><a class="dropdown-item nav-link" href="six-colum-full-wide.html">Six
+                          Column</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item navbar-text-color">
+                  <a class="nav-link text-decoration-none  contact-us-margin navbar-text-color"
+                    href="contact.html">Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <div class="btn-talk">
+                    <a class="nav-link" href="contact.html">Let's Talk <div class="inner-arrow-menu-btn"><i
+                          class="fa fa-arrow-right"></i></div></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- BANNER-SECTION -->
+    <section class="home-banner-section overflow-hidden ">
+      <div class="social-icons-about position-relative">
+        <ul class="list-unstyled">
+          <li> <a href="#" class="social-icons-inner facebook-top"><i
+                class="fa-brands fa-facebook-f icons-style"></i></a>
+          </li>
+          <li> <a href="#" class="social-icons-inner twitter-top"><i class="fa-brands fa-twitter icons-style"></i></a>
+          </li>
+          <li> <a href="#" class="social-icons-inner linkedin-top"><i
+                class="fa-brands fa-linkedin-in icons-style"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="banner-container-box">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 mb-md-0 mb-4 text-md-left text-center">
+              <div class="home-banner-text about-us-banner-text">
+                <h1 class="text-white" data-aos="fade-right">Load More</h1>
+                <p class="text-white banner-paragraph">Ruis autem vel eum iure reprehender
+                  esse ruam nihil molestiae.</p>
+                <div class="action-btn-banner  d-inline-block">
+                  <a href="load-more.html" class="text-decoration-none"><span class="hom-span">Home</span><span
+                      class="right-arr-span">>></span><span class="about-span">Load More</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+              <div class="banner-img-content-about position-relative">
+                <figure class="banner-img mb-0 wow slideInRight" data-wow-duration="2s"
+                  style="visibility: visible; animation-duration: 2s; animation-name: slideInRight;">
+                  <img class="img-fluid banner-img-width" src="assets/images/about-us-right-img.png" alt="">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- MAIN SECTION -->
+  <section class="blog-posts  padding-top padding-bottom">
+    <div class="container">
+      <div class="row wow fadeInUp" style="visibility: visible; animation-name: fadeInUp">
+        <div id="blog" class="three-column col-xl-12">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4">
+              <div class="float-left w-100 post-item border mb-4">
+                <div class="post-item-wrap position-relative">
+                  <div class="post-image">
+                    <a href="#">
+                      <img alt="" src="assets/images/standard_post_img01.jpg" />
+                    </a>
+                    <span class="post-meta-category">
+                      <a href="#">Lifestyle</a>
+                    </span>
+                    <!--post-image-->
+                  </div>
+                  <div class="post-item-description">
+                    <span class="post-meta-date"> Jan 21, 2017 </span>
+                    <span class="post-meta-comments">
+                      <a href=""> 33 Comments </a>
+                    </span>
+                    <h2>
+                      <a href="#">Standard post with a single image </a>
+                    </h2>
+                    <p>
+                      Curabitur pulvinar euismod ante, ac sagittis ante
+                      posuere ac. Vivamus luctus commodo dolor porta feugiat.
+                      Fusce at velit id ligula ac sagittis ante posuere ac
+                      pharetra laoreet commodo dolor porta.
+                    </p>
+                    <a href="single-post.html" class="item-link text-decoration-none">Read More <i
+                        class="fa fa-arrow-right"></i></a>
+                    <!--post-item-description-->
+                  </div>
+                  <!--post-item-wrap-->
+                </div>
+                <!--post-item-->
+              </div>
+              <!--col-->
+            </div>
+            <div class="col-xl-4 col-lg-4">
+              <div class="float-left w-100 post-item border mb-4">
+                <div class="post-item-wrap position-relative">
+                  <div id="blogslider" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item">
+                        <img src="assets/images/standard_post_img02.jpg" alt="" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/standard_post_img04.jpg" alt="" />
+                      </div>
+                      <div class="carousel-item active">
+                        <img src="assets/images/standard_post_img06.jpg" alt="" />
+                      </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#blogslider" data-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#blogslider" data-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </a>
+                  </div>
+                  <span class="post-meta-category"><a href="#">Technology</a></span>
+                  <div class="post-item-description">
+                    <span class="post-meta-date"> Jan 21, 2017 </span>
+                    <span class="post-meta-comments"><a href=""> 33 Comments </a></span>
+                    <h2>
+                      <a href="#">Simplicity, a post with slider gallery</a>
+                    </h2>
+                    <p>
+                      Curabitur pulvinar euismod ante, ac sagittis ante
+                      posuere ac. Vivamus luctus commodo dolor porta feugiat.
+                      Fusce at velit id ligula ac sagittis ante posuere ac
+                      pharetra laoreet commodo dolor porta.
+                    </p>
+                    <a href="single-post.html" class="item-link text-decoration-none">Read More <i
+                        class="fa fa-arrow-right"></i></a>
+                    <!--post-item-description-->
+                  </div>
+                  <!--post-item-wrap-->
+                </div>
+                <!--post-item-->
+              </div>
+              <!--col-->
+            </div>
+            <div class="col-xl-4 col-lg-4">
+              <div class="float-left w-100 post-item border mb-4">
+                <div class="post-item-wrap position-relative">
+                  <div class="post-image">
+                    <a href="#">
+                      <img alt="" src="assets/images/standard_post_img03.jpg" />
+                    </a>
+                    <span class="post-meta-category">
+                      <a href="#">Science</a>
+                    </span>
+                  </div>
+                  <div class="post-item-description">
+                    <span class="post-meta-date"> Jan 21, 2017 </span>
+                    <span class="post-meta-comments">
+                      <a href=""> 33 Comments </a>
+                    </span>
+                    <h2>
+                      <a href="#">Standard post with a single image </a>
+                    </h2>
+                    <p>
+                      Curabitur pulvinar euismod ante, ac sagittis ante
+                      posuere ac. Vivamus luctus commodo dolor porta feugiat.
+                      Fusce at velit id ligula ac sagittis ante posuere ac
+                      pharetra laoreet commodo dolor porta.
+                    </p>
+                    <a href="single-post.html" class="item-link text-decoration-none">Read More <i
+                        class="fa fa-arrow-right"></i></a>
+                    <!--post-item-description-->
+                  </div>
+                  <!--post-item-wrap-->
+                </div>
+                <!--post-item-->
+              </div>
+              <!--col-->
+            </div>
+            <div class="col-xl-4 col-lg-4 hide-blog">
+              <div class="float-left w-100 post-item border mb-4">
+                <div class="post-item-wrap position-relative">
+                  <div class="post-audio position-relative">
+                    <a href="#">
+                      <img alt="" src="assets/images/standard_post_img05.jpg" />
+                    </a>
+                    <span class="post-meta-category">
+                      <a href="">Audio</a>
+                    </span>
+                    <audio class="position-absolute" controls="">
+                      <source src="horse.ogg" type="audio/ogg" />
+                      <source src="assets/audio/horse.mp3" type="audio/mpeg" />
+                    </audio>
+                  </div>
+                  <div class="post-item-description">
+                    <span class="post-meta-date"> Jan 21, 2017 </span>
+                    <span class="post-meta-comments">
+                      <a href=""> 33 Comments </a>
+                    </span>
+                    <h2>
+                      <a href="#">Self Hosted HTML5 Audio (mp3) with image cover</a>
+                    </h2>
+                    <p>
+                      Curabitur pulvinar euismod ante, ac sagittis ante
+                      posuere ac. Vivamus luctus commodo dolor porta feugiat.
+                      Fusce at velit id ligula ac sagittis ante posuere ac
+                      pharetra laoreet commodo dolor porta.
+                    </p>
+                    <a href="single-post.html" class="item-link text-decoration-none">Read More <i
+                        class="fa fa-arrow-right"></i></a>
+                    <!--post-item-description-->
+                  </div>
+                  <!--post-item-wrap-->
+                </div>
+                <!--post-item-->
+              </div>
+              <!--col-->
+            </div>
+            <div class="col-xl-4 col-lg-4 hide-blog">
+              <div class="float-left w-100 post-item border mb-4">
+                <div class="post-item-wrap position-relative">
+                  <div class="post-video">
+                    <div class="embed-container">
+                      <iframe src="https://player.vimeo.com/video/157467640?background=1"></iframe>
+                    </div>
+                    <span class="post-meta-category"><a href="">Video</a></span>
+                    <!--post-video-->
+                  </div>
+                  <div class="post-item-description">
+                    <span class="post-meta-date"> Jan 21, 2017 </span>
+                    <span class="post-meta-comments"><a href=""> 33 Comments </a></span>
+                    <h2>
+                      <a href="#">This is a example post with Vimeo video</a>
+                    </h2>
+                    <p>
+                      Curabitur pulvinar euismod ante, ac sagittis ante
+                      posuere ac. Vivamus luctus commodo dolor porta feugiat.
+                      Fusce at velit id ligula ac sagittis ante posuere ac
+                      pharetra laoreet commodo dolor porta.
+                    </p>
+                    <a href="single-post.html" class="item-link text-decoration-none">Read More <i
+                        class="fa fa-arrow-right"></i></a>
+                    <!--post-item-description-->
+                  </div>
+                  <!--post-item-wrap-->
+                </div>
+              </div>
+              <!--col-->
+            </div>
+            <div class="col-xl-4 col-lg-4 hide-blog">
+              <div class="float-left w-100 post-item border mb-4">
+                <div class="post-item-wrap position-relative">
+                  <div class="post-video">
+                    <div class="fluid-width-video-wrapper">
+                      <iframe width="560" height="376" src="https://www.youtube.com/embed/dA8Smj5tZOQ"></iframe>
+                    </div>
+                    <span class="post-meta-category"><a href="">Video</a></span>
+                  </div>
+                  <div class="float-left w-100 post-item-description">
+                    <span class="post-meta-date"> Jan 21, 2017 </span>
+                    <span class="post-meta-comments"><a href=""> 33 Comments </a></span>
+                    <h2>
+                      <a href="#">This is a example post with YouTube</a>
+                    </h2>
+                    <p>
+                      Curabitur pulvinar euismod ante, ac sagittis ante
+                      posuere ac. Vivamus luctus commodo dolor porta feugiat.
+                      Fusce at velit id ligula ac sagittis ante posuere ac
+                      pharetra laoreet commodo dolor porta.
+                    </p>
+                    <a href="single-post.html" class="item-link text-decoration-none">Read More <i
+                        class="fa fa-arrow-right"></i></a>
+                    <!--post-item-description-->
+                  </div>
+                  <!--post-item-wrap-->
+                </div>
+                <!--post-item-->
+              </div>
+              <!--col-->
+            </div>
+            <div class="load-more d-inline-block m-auto align-top">
+              <a class="d-block" href="single-post.html">Load More</a>
+            </div>
+          </div>
+          <!--blog-->
+        </div>
+        <!--row-->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer-section -->
+  <div class="footer-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="footer-content1">
+            <a href="index.html">
+              <figure>
+                <img src="./assets/images/footer-logo.png" alt="" class="img-fluid"/>
+              </figure>
+            </a>
+            <p class="footer-section-text">Ruis aute irure dolor in reprehenderit in volu
+              velit ese ciu nulla pariatur excepteur sint oc
+              aecat curidatat nona...</p>
+            <ul class="list-unstyled">
+              <li class="list-item">
+                <a href="#"><i class="fa-brands fa-facebook-f marginLeft"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter marginLeft"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in marginLeft"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-12 d-lg-block d-none">
+          <ul class="list-unstyled useful-footer">
+            <li class="list-item">
+              <h4 class="footer-link text-white footer-next-list ">Useful Links</h4>
+            </li>
+            <li><i class="fa-solid fa-arrow-right"></i>
+              <a href="index.html" class="text-decoration-none footer-link-p">
+                Home
+              </a>
+            </li>
+            <li><i class="fa-solid fa-arrow-right"></i>
+              <a href="about-us.html" class="text-decoration-none footer-link-p">
+                About
+              </a>
+            </li>
+            <li><i class="fa-solid fa-arrow-right"></i>
+
+              <a href="services.html" class="text-decoration-none footer-link-p">
+                Services
+              </a>
+            </li>
+            <li><i class="fa-solid fa-arrow-right"></i>
+              <a href="projects.html" class="text-decoration-none footer-link-p">
+                Projects
+              </a>
+            </li>
+
+            <li><i class="fa-solid fa-arrow-right"></i>
+              <a href="contact.html" class="text-decoration-none footer-link-p">
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12 d-md-block d-none">
+
+          <ul class="list-unstyled our-services-footer">
+            <li class="list-item">
+              <h4 class="footer-link text-white footer-next-list">Our Services</h4>
+            </li>
+            <li><i class="fa-solid fa-arrow-right"></i>
+              <a href="services.html" class="text-decoration-none footer-link-p">
+                Robotic Automation
+              </a>
+            </li>
+            <li><i class="fa-solid fa-arrow-right"></i>
+              <a href="services.html" class="text-decoration-none footer-link-p">
+                Predictive Analysis
+              </a>
+            </li>
+            <li><i class="fa-solid fa-arrow-right"></i>
+
+              <a href="services.html" class="text-decoration-none footer-link-p">
+                Machine Learning
+              </a>
+            </li>
+            <li><i class="fa-solid fa-arrow-right"></i>
+              <a href="projects.html" class="text-decoration-none footer-link-p">
+                Data Security
+              </a>
+            </li>
+
+            <li><i class="fa-solid fa-arrow-right"></i>
+              <a href="./contact.html" class="text-decoration-none footer-link-p">
+                IT Management
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="footer-list">
+            <div class="icon-list-box1">
+              <ul class="list-unstyled contact-us-ul">
+                <li class="list-item">
+                  <h4 class="footer-link text-white footer-next-list">Contact us</h4>
+                </li>
+                <li class="list-item position-reletive addres-list icon-list1 ">
+                  <span><i class="fa fa-phone position-absolute fa-icon diverge-icons"></i></span>
+                  <span class="contact-number"><a href="tel:+4733378901"
+                      class="text-decoration-none footer-link-p ml-0">+613
+                      8376 6284</a></span>
+                </li>
+                <li class="list-item position-reletive addres-list icon-list1 ">
+                  <span><i class="fa fa-envelope position-absolute fa-icon diverge-icons2"></i></span>
+                  <span class="number"><a href="mailto:webmaster@example.com"
+                      class="text-decoration-none footer-link-p ml-0">Info@glibaI.com</a></span>
+
+                </li>
+                <li class="list-item position-reletive addres-list icon-list1 ">
+                  <span><i class="fa-solid fa-location-dot diverge-icons3 position-absolute"></i></span>
+                  <span class="contact-number"><a href="#" class="text-decoration-none footer-link-p ml-0">21
+                      King Street Melbourne,
+                      3000, Australia</a></span>
+
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer-bar text-center">
+        <div class="container">
+          <div class="row">
+            <div class="footer-bar-content w-100">
+              <p class="text-size-16 mb-0">Copyright ©2022, Glib AI All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+        <a class="top-btn show slidein" href="#">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/jquery-1.12.1.min.js"></script>
+  <script src="assets/js/popper.min.js"> </script>
+  <script src="assets/js/bootstrap.min.js"> </script>
+  <script src="assets/js/owl.carousel.js"></script>
+  <script src="assets/js/back-to-top.js"></script>
+  <script src="assets/js/carousel.js"></script>
+  <script src="assets/js/animations-aos.js"></script>
+</body>
+
+</html>

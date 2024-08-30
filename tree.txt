@@ -1,0 +1,174 @@
+Folder PATH listing for volume Windows-SSD
+Volume serial number is 623E-F163
+C:.
+|   about-us.html
+|   blog.html
+|   contact.html
+|   faqs-page.html
+|   four-column.html
+|   index.html
+|   infinite-scroll.html
+|   load-more.html
+|   one-column.html
+|   our-team.html
+|   projects.html
+|   services copy.html
+|   services.html
+|   single-post.html
+|   six-colum-full-wide.html
+|   three-column.html
+|   tree.txt
+|   two-column.html
+|   
++---assets
+|   +---bootstrap
+|   |   |   bootstrap.min.css
+|   |   |   
+|   |   \---js
+|   |           bootstrap.bundle.js
+|   |           bootstrap.bundle.js.map
+|   |           bootstrap.bundle.min.js
+|   |           bootstrap.bundle.min.js.map
+|   |           bootstrap.js
+|   |           bootstrap.js.map
+|   |           bootstrap.min.js
+|   |           bootstrap.min.js.map
+|   |           owl.carousel.js
+|   |           
+|   +---css
+|   |       custom-style.css
+|   |       mobile.css
+|   |       owl.carousel.min.css
+|   |       owl.theme.default.min.css
+|   |       special-classes.css
+|   |       style.css
+|   |       super-classes.css
+|   |       
+|   +---images
+|   |   |   ab-img-2.png
+|   |   |   ab-img-3.png
+|   |   |   ab-img-4.png
+|   |   |   about-img-1.png
+|   |   |   about-img-2.jpg
+|   |   |   about-img-3.jpg
+|   |   |   about-img-4.jpg
+|   |   |   about-us-banner-section.jpg
+|   |   |   about-us-left-before-img.png
+|   |   |   about-us-left-img.png
+|   |   |   about-us-right-img.png
+|   |   |   analysis-icon.png
+|   |   |   automation-icon.png
+|   |   |   banner-img.png
+|   |   |   blog-img1.jpg
+|   |   |   blog-img2.jpg
+|   |   |   blog-img3.jpg
+|   |   |   business-section-video.jpg
+|   |   |   case-img1.png
+|   |   |   case-img2.png
+|   |   |   case-img3.png
+|   |   |   case-studies.jpg
+|   |   |   case-study-img4.png
+|   |   |   case-study-img5.png
+|   |   |   case-study-img6.png
+|   |   |   completed-projects.png
+|   |   |   contact-us-background.png
+|   |   |   data-analysis-img.jpg
+|   |   |   data-analysis-section.jpg
+|   |   |   education-icon.png
+|   |   |   electronics-icon.png
+|   |   |   email-icon.png
+|   |   |   footer-left-img.png
+|   |   |   footer-logo.png
+|   |   |   home-header-section.jpg
+|   |   |   icon-folder.png
+|   |   |   location-icon.png
+|   |   |   logo.png
+|   |   |   metal-icon.png
+|   |   |   ml-icon.png
+|   |   |   our-team-img1.png
+|   |   |   our-team-img2.png
+|   |   |   our-team-img3.png
+|   |   |   our-team-img4.png
+|   |   |   our-team-img5.png
+|   |   |   our-team-img6.png
+|   |   |   phone-icon.png
+|   |   |   play-icon-sign.png
+|   |   |   post-featured-img1.jpg
+|   |   |   post-featured.jpg
+|   |   |   post-featured2.jpg
+|   |   |   post-featured3.jpg
+|   |   |   post-featured4.jpg
+|   |   |   quote-icon.png
+|   |   |   review1.jpg
+|   |   |   review2.jpg
+|   |   |   satisfied-clients.png
+|   |   |   services-section.jpg
+|   |   |   side_post_img01.jpg
+|   |   |   side_post_img02.jpg
+|   |   |   side_post_img03.jpg
+|   |   |   standard_post_img01.jpg
+|   |   |   standard_post_img02.jpg
+|   |   |   standard_post_img03.jpg
+|   |   |   standard_post_img04.jpg
+|   |   |   standard_post_img05.jpg
+|   |   |   standard_post_img06.jpg
+|   |   |   strategic-img.png
+|   |   |   support-icon.png
+|   |   |   testimonial-logo-img1.png
+|   |   |   testimonial-logo-img2.png
+|   |   |   testimonial-logo-img3.png
+|   |   |   testimonial-logo-img4.png
+|   |   |   testimonial-logo1.png
+|   |   |   testimonial-logo2.png
+|   |   |   testimonial-logo3.png
+|   |   |   testimonial-logo4.png
+|   |   |   website-icon.png
+|   |   |   
+|   |   \---favicons
+|   |           111ee95fc36603661b879a6202437cf6.ico.zip
+|   |           android-icon-144x144.png
+|   |           android-icon-192x192.png
+|   |           android-icon-36x36.png
+|   |           android-icon-48x48.png
+|   |           android-icon-72x72.png
+|   |           android-icon-96x96.png
+|   |           apple-icon-114x114.png
+|   |           apple-icon-120x120.png
+|   |           apple-icon-144x144.png
+|   |           apple-icon-152x152.png
+|   |           apple-icon-180x180.png
+|   |           apple-icon-57x57.png
+|   |           apple-icon-60x60.png
+|   |           apple-icon-72x72.png
+|   |           apple-icon-76x76.png
+|   |           apple-icon-precomposed.png
+|   |           apple-icon.png
+|   |           browserconfig.xml
+|   |           favicon-16x16.png
+|   |           favicon-32x32.png
+|   |           favicon-96x96.png
+|   |           favicon.ico
+|   |           manifest.json
+|   |           ms-icon-144x144.png
+|   |           ms-icon-150x150.png
+|   |           ms-icon-310x310.png
+|   |           ms-icon-70x70.png
+|   |           
+|   \---js
+|           about-section-video.js
+|           animations-aos.js
+|           back-to-top.js
+|           bootstrap.min.js
+|           carousel.js
+|           jquery-1.12.1.min.js
+|           owl.carousel.js
+|           popper.min.js
+|           wow.js
+|           
+\---ChatGPTClone _Source_Code
+        .env
+        app copy 2.py
+        app copy.py
+        app.py
+        requirements.txt
+        
