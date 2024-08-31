@@ -139,7 +139,8 @@ container = st.container()
 
 with container:
     with st.form(key='my_form', clear_on_submit=True):
-        user_input = st.text_area("Your question goes here:", key='input', height=100)
+        st.markdown("<p style='color: blue; font-weight: bold;'>Your question goes here:</p>", unsafe_allow_html=True)
+        user_input = st.text_area("", key='input', height=140)
         submit_button = st.form_submit_button(label='Send')
 
         if submit_button:

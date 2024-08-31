@@ -127,7 +127,7 @@ a {
   padding: 196px 13px 196px 383px;
 }
 .social-icons-inner {
-  top: 282px;
+  top: 180px; /* Adjusted to move all icons slightly up */
   position: absolute;
   left: 122px;
   z-index: 1;
@@ -141,11 +141,12 @@ a {
   color: var(--e-global-color-accent);
 }
 .twitter-top {
-  top: 348px;
+  top: 230px; /* Adjusted to move the Twitter icon slightly up */
 }
 .linkedin-top {
-  top: 414px;
+  top: 280px; /* Adjusted to move the LinkedIn icon slightly up */
 }
+
 .icons-style {
   font-size: 14px;
   border: 1px solid #fff;
@@ -1398,19 +1399,21 @@ a {
   left: -30px;
   top: -40px;
 }
-
 .social-icons-about .social-icons-inner {
-  top: 123px;
+  top: 80px; /* Reduced by 10px */
   position: absolute;
   left: 122px;
   z-index: 1;
 }
+
 .social-icons-about .twitter-top {
-  top: 186px;
+  top: 135px; /* Reduced by 15px */
 }
+
 .social-icons-about .linkedin-top {
-  top: 247px;
+  top: 205px; /* Reduced by 20px */
 }
+
 .popup-figure {
   margin-right: 25px;
 }
