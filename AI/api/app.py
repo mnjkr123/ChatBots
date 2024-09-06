@@ -1,11 +1,15 @@
 import os
+from streamlit_chat import message
+from langchain_community.llms import HuggingFaceEndpoint
+from langchain.chains import ConversationChain
+from langchain.chains.conversation.memory import ConversationSummaryMemory
 from dotenv import load_dotenv
 import streamlit as st
 from pathlib import Path
-from streamlit_chat import message
-from langchain.llms import HuggingFaceEndpoint
-from langchain.chains import ConversationChain
-from langchain.chains.conversation.memory import ConversationSummaryMemory
+
+
+# Set page configuration as the very first Streamlit command
+st.set_page_config(page_title="Chat GPT Clone", page_icon=":robot_face:")
 
 # Load environment variables from .env file
 load_dotenv()
@@ -14,71 +18,57 @@ load_dotenv()
 API_Key = os.getenv("HUGGINGFACEHUB_API_TOKEN")
 
 # Setting page title and header
-st.set_page_config(page_title="Chat GPT Clone", page_icon=":robot_face:")
 st.markdown(
     """
     <h2 style='text-align: center; margin-top: 2px;'>How can I assist you?</h2>
     """,
     unsafe_allow_html=True
 )
-st.markdown("""
-    <style>
-        .reportview-container {
-            margin-top: -2em;
-        }
-        #MainMenu {visibility: hidden;}
-        .stDeployButton {display:none;}
-        footer {visibility: hidden;}
-        #stDecoration {display:none;}
-    </style>
-""", unsafe_allow_html=True)
 
 # Custom CSS for styling
 st.markdown("""
     <style>
         .css-1d391kg { /* Sidebar container */
-            background-color: #0033a0; /* Blue background color for sidebar */
+            background-color: #0033a0;
             color: white;
         }
         .css-1d391kg button { /* Sidebar button styling */
-            color: white; /* Button text color */
+            color: white;
             border: none;
-            background: transparent; /* Remove default button background */
+            background: transparent;
         }
         .css-1d391kg .css-14xtw13 { /* Sidebar content */
-            color: white; /* Sidebar content color */
-        }
-        .css-14xtw13 { /* Sidebar elements container */
-            background-color: #0033a0; /* Blue background color for the summarize button area */
+            color: white;
         }
         .chatbot-section {
-            background-color: #0033a0; /* Blue background color for the chatbot section */
+            background-color: #0033a0;
             padding: 20px;
             border-radius: 10px;
             color: white;
         }
-        .chatbot-section h2 {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: white;
-            margin-bottom: 20px;
-        }
         .st-chatbox {
-            background-color: #ffffff; /* White background for the chatbox */
-            color: #000000; /* Black text for the chatbox */
+            background-color: #ffffff;
+            color: #000000;
         }
     </style>
 """, unsafe_allow_html=True)
 
 # Path to the image
-image_path = str(Path(__file__).parent / '../assets/images/about-img-3.jpg')
+# image_path = Path(__file__).resolve().parent.parent / 'assets/images/about-img-3.jpg'
+image_path = Path(__file__).parent / '../../assets/images/about-img-3.jpg'
 
-# Display image using Streamlit's built-in functions
-st.sidebar.image(image_path, use_column_width=True, caption="Chatbot")
+
+# Check if image exists before displaying it
+if image_path.exists():
+    st.sidebar.image(str(image_path), use_column_width=True, caption="Chatbot")
+else:
+    st.sidebar.write("Image not found")
+
+
 
 # Streamlit button for "Summarise the conversation"
 summarise_button = st.sidebar.button("Summarise the conversation", key="summarise")
-if summarise_button:
+if summarise_button and 'conversation' in st.session_state:
     st.sidebar.write("Summary:\n\n" + st.session_state['conversation'].memory.buffer)
 
 # Optional: Additional CSS to style the button
@@ -107,28 +97,22 @@ if 'messages' not in st.session_state:
 
 # Function to get a response from the Huggingface model
 def getresponse(userInput):
-    # Initialize the conversation memory if not already done
     if st.session_state['conversation'] is None:
         llm = HuggingFaceEndpoint(
             repo_id="mistralai/Mistral-7B-Instruct-v0.2",
             huggingfacehub_api_token=API_Key,
-            temperature=0.3,  # Lower temperature for more concise responses
-            max_tokens=150     # Increased token limit for longer responses
+            temperature=0.3,
+            max_tokens=150
         )
 
-        # Using ConversationSummaryMemory to retain context
         st.session_state['conversation'] = ConversationChain(
             llm=llm,
             verbose=True,
-            memory=ConversationSummaryMemory(llm=llm)  # Memory to retain conversation context
+            memory=ConversationSummaryMemory(llm=llm)
         )
 
-    # Predict the response and store the conversation memory
     response = st.session_state['conversation'].predict(input=userInput)
-
-    # Ensure there is no "Human" label in the response
     response = response.replace("Human:", "").strip()
-
     return response
 
 # Response container for displaying the chat
@@ -151,15 +135,10 @@ with container:
             with response_container:
                 for i in range(len(st.session_state['messages'])):
                     if (i % 2) == 0:
-                        message(
-                            st.session_state['messages'][i],
-                            is_user=True,
-                            key=str(i) + '_user',
-                        )
+                        message(st.session_state['messages'][i], is_user=True, key=str(i) + '_user')
                     else:
-                        # Format the AI response into multiple paragraphs
                         formatted_response = st.session_state['messages'][i].replace('\n', '').replace('\r', '')
-                        paragraphs = formatted_response.split('\n\n')  # Split response into paragraphs
+                        paragraphs = formatted_response.split('\n\n')
                         for para in paragraphs:
                             st.markdown(
                                 f"""
@@ -169,4 +148,3 @@ with container:
                                 """,
                                 unsafe_allow_html=True,
                             )
-
