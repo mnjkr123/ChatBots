@@ -8,12 +8,12 @@
   ],
   "routes": [
     {
+      "src": "/assets/(.*)",
+      "dest": "/assets/images/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "AI/api/app.py"
     }
-  ],
-  "static": {
-    "src": "assets",
-    "dest": "assets"
-  }
+  ]
 }
